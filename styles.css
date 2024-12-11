@@ -1,67 +1,75 @@
-/* General Styles */
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Header */
-header {
-    background-color: #b5d2b5;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* About Section */
-.about {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #f9f9f9;
-}
-
-.profile-photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin-bottom: 1rem;
-}
-
-/* Contact Section */
-.contact {
-    padding: 2rem 1rem;
-    text-align: center;
-    background-color: #ffffff;
-}
-
-.contact-links {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-}
-
-.contact-item {
-    text-decoration: none;
-    color: #b5d2b5;
-    font-weight: bold;
-    display: flex;
     align-items: center;
-    gap: 0.5rem;
-}
-
-.contact-item img {
-    width: 20px;
-    height: 20px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #4CAF50;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  .display {
+    grid-column: span 4;
+    background: #222;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .btn {
+    font-size: 1.5rem;
+    padding: 10px;
+    background: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ddd;
+  }
+  
+  .operator {
+    background: #f0ad4e;
     color: white;
-}
+  }
+  
+  .operator:hover {
+    background: #ec971f;
+  }
+  
+  #clear {
+    background: #d9534f;
+    color: white;
+  }
+  
+  #clear:hover {
+    background: #c9302c;
+  }
+  
+  #equals {
+    grid-column: span 4;
+    background: #5cb85c;
+    color: white;
+  }
+  
+  #equals:hover {
+    background: #4cae4c;
+  }
+  
